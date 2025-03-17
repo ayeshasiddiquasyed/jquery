@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Select Value Display</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js">
+</script>
+</head>
+<body>
+<h2>Select a value:</h2>
+<select id="mySelect">
+<option value="">Select an option</option>
+<option value="PEN">PEN</option>
+<option value="BOOK">BOOK</option>
+<option value="ERASER">ERASER</option>
+</select>
+<script>
+$(document).ready(function(){
+$("#mySelect").change(function(){
+var selectedValue=$(this).val();
+$("#selectedValueParagraph").text("Selected value:"+selectedValue);
+});
+});
+</script>
+<p id="selectedValueParagraph">Selected value will be displayed here.</p>
+</body>
+</html>
