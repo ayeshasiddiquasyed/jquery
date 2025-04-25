@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content=width=device-width,initial-scale=1.0">
+<title>Set Textarea Value</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+Address:<br>
+<textarea id="myTextarea"></textarea><br><br>
+<button type="button" id="tryItButton">Try it</button>
+<script>
+$(document).ready(function () {
+$("#tryItButton").click(function () {
+$("#myTextarea").val("Fifth Avenue, New York City");
+});
+});
+</script>
+</body>
+</html>
